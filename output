@@ -1,0 +1,25 @@
+Generating salary slips for all employees...
+Pay Slip for Alice (ID: 101)
+Basic Salary: ₹50000.0
+Bonus: ₹5000.0
+Compensation: ₹2000.0
+Total Salary: ₹57000.0
+Tax Deducted: ₹5700.0
+Net Salary: ₹51300.0
+-----------------------------------
+Pay Slip for Bob (ID: 102)
+Basic Salary: ₹45000.0
+Bonus: ₹4500.0
+Compensation: ₹2000.0
+Total Salary: ₹51500.0
+Tax Deducted: ₹5150.0
+Net Salary: ₹46350.0
+-----------------------------------
+Pay Slip for Charlie (ID: 201)
+Basic Salary: ₹70000.0
+Bonus: ₹14000.0
+Compensation: ₹5000.0
+Total Salary: ₹89000.0
+Tax Deducted: ₹8900.0
+Net Salary: ₹80100.0
+-----------------------------------
