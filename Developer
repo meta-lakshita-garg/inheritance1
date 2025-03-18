@@ -1,0 +1,47 @@
+class Developer extends Employee {
+    private double basicSalary;
+
+    public Developer(String name, int id, double basicSalary) {
+        super(name, id);
+        this.basicSalary = basicSalary;
+    }
+
+    @Override
+    public double getBasicSalary() {
+        return basicSalary;
+    }
+
+    @Override
+    public double getBonus() {
+        return basicSalary * 0.1;  // 10% bonus for Developers
+    }
+
+    @Override
+    public double getCompensation() {
+        return 2000;  // Fixed compensation for Developers
+    }
+}
+
+class Manager extends Employee {
+    private double basicSalary;
+
+    public Manager(String name, int id, double basicSalary) {
+        super(name, id);
+        this.basicSalary = basicSalary;
+    }
+
+    @Override
+    public double getBasicSalary() {
+        return basicSalary;
+    }
+
+    @Override
+    public double getBonus() {
+        return basicSalary * 0.2;  // 20% bonus for Managers
+    }
+
+    @Override
+    public double getCompensation() {
+        return 5000;  // Fixed compensation for Managers
+    }
+}
