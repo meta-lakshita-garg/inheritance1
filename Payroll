@@ -1,0 +1,16 @@
+class Payroll {
+    public static void printSalarySlips(Organization org) {
+        System.out.println("Generating salary slips for all employees...");
+
+        for (Employee emp : org.getAllEmployees()) {
+            double totalSalary = emp.getTotalSalary();
+            double tax = totalSalary * 0.1; // 10% tax on total salary
+            double netSalary = totalSalary - tax;
+
+            emp.printPaySlip();
+            System.out.println("Tax Deducted: ₹" + tax);
+            System.out.println("Net Salary: ₹" + netSalary);
+            System.out.println("-----------------------------------");
+        }
+    }
+}
