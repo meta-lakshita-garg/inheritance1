@@ -1,0 +1,27 @@
+public class PayrollSystem {
+    public static void main(String[] args) {
+        // Create organization
+        Organization org = new Organization("TechCorp");
+
+        // Create departments
+        Department devDept = new Department("Development");
+        Department hrDept = new Department("HR");
+
+        // Add departments to organization
+        org.addDepartment(devDept);
+        org.addDepartment(hrDept);
+
+        // Create employees
+        Developer dev1 = new Developer("Alice", 101, 50000);
+        Developer dev2 = new Developer("Bob", 102, 45000);
+        Manager manager = new Manager("Charlie", 201, 70000);
+
+        // Add employees to departments
+        devDept.join(dev1);
+        devDept.join(dev2);
+        hrDept.join(manager);
+
+        // Generate payslips
+        Payroll.printSalarySlips(org);
+    }
+}
